@@ -7,8 +7,9 @@ const Practice = () => {
     <Person></Person>
     <Person></Person>
     <Sports></Sports>
-    <Developer></Developer>
-    <Developer></Developer>
+    <Developer name= "X" age= '1'></Developer>
+    <Developer name = 'Y' age= '1'></Developer>
+    <Developer name = 'Z' age= '1'></Developer>
     </div>
   )
 }
@@ -26,7 +27,9 @@ const Person = ()=>{
   )
 }
 
-const Developer=()=>{
+const Developer=(props)=>{
+  console.log(props);
+  
   return(
     <div style={{
       color: 'green',
@@ -34,8 +37,8 @@ const Developer=()=>{
       border: '1px solid red',
       margin: '10px'
     }}>
-    <h2>Developer</h2>
-    <h3>Technology</h3>
+    <h2>Developer {props.name}</h2>
+    <h3>Technology {props.age}</h3>
     </div>
   )
 }
