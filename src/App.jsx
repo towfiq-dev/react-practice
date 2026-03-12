@@ -1,5 +1,6 @@
 import './App.css'
 import Practice from './Practice'
+import PracticeJsx from './PracticeJsx'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <div>
     <Practice></Practice>
+    <PracticeJsx></PracticeJsx>
     </div>
   )
 }
